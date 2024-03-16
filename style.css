@@ -15,7 +15,7 @@
     --clr-N-wengeBrown: hsl(30, 10%, 34%);
     --clr-N-darkCharcoal: hsl(24, 5%, 18%);
 
-    /*font-size: ;s*/
+    /*font-size:*/
     --fs-sm: clamp(0.8rem, 0.2vw + 0.7rem, 0.9rem);
     --fs-base: clamp(0.9rem, 0.3vw + 0.9rem, 1.2rem);
     --fs-md: clamp(1.2rem, 0.6vw + 1rem, 1.6rem);
@@ -24,6 +24,7 @@
     --fs-xxl: clamp(2.3rem, 2.1vw + 1.8rem, 3.7rem);
     --fs-xxxl: clamp(2.9rem, 3.1vw + 2.1rem, 4.9rem);
     /*fs*/
+
     --ff-S: "Young Serif", serif;
     --ff-P: "Outfit", sans-serif;
 
@@ -50,14 +51,17 @@
         margin: 0;
         padding: 0;
         border: 0;
-        fs: 100%;
+        font-size: 100%;
         font: inherit;
         vertical-align: baseline;
     }
     /* HTML5 display-role reset for older browsers */
     article, aside, details, figcaption, figure, 
-    footer, header, hgroup, menu, nav, section {
+    footer, header, hgroup, menu, nav, section,img {
         display: block;
+    }
+    img{
+        width: 100%;
     }
     body {
         line-height: 1;
@@ -79,18 +83,30 @@
     }
 
 /*CSS RESET*/
-
 body{
     font-family: var(--ff-P);
     font-weight: var(--fw-400);
-    fs: var(--fs-400);
-    line-height: 1rem;
+    font-size: var(--fs-sm);
 }
 h1,h2,h3{
     font-family: var(--ff-S);
 }
 
+/*customProp*/
 .container{
-    margin-block: auto;
+    margin-inline: auto;
     width: min(100% - 2rem, 50em);
 }
+.flow-sm > * + *{
+    margin-top: .5rem;
+}
+.flow-base > * + *{
+    margin-top: 1rem;
+}
+.flow-big > * + *{
+    margin-top: 2.5rem;
+}
+
+.listmargin{ margin-left: 1.25rem;}
+.disc{list-style: disc;}
+.number{list-style: decimal;}
