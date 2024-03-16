@@ -86,12 +86,58 @@
 body{
     font-family: var(--ff-P);
     font-weight: var(--fw-400);
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
+    color: var(--clr-N-wengeBrown);
+    margin-bottom: 1rem;
 }
 h1,h2,h3{
     font-family: var(--ff-S);
 }
+h1{
+    font-size: var(--fs-xl);
+}
+h2{
+    font-size: var(--fs-lg);
+    color: var(--clr-P-nutmeg);
+}
 
+table{
+    width: 100%;
+}
+tr{
+    border-bottom: 0.125rem solid var(--clr-N-lightGrey);
+}
+
+tr > td + td {
+    padding: 0.75rem;
+    color: var(--clr-P-nutmeg);
+    font-weight: var(--fw-600)
+}
+
+tr td {
+    padding-left: 5rem;
+}
+@media screen and (min-width: 50em) {
+    body{
+        background-color: var(--clr-N-eggshell);
+    }
+    main{
+        --_radius: 1.5rem;
+        display: grid;
+        place-items: center;
+        border: red;
+        max-width: 40rem;
+        margin: auto;
+        margin-top: 5rem;
+        border-radius: var(--_radius);
+        overflow: hidden;
+        background-color: var(--clr-N-white);
+        padding: 1rem;
+    } 
+    img{
+        border-radius: var(--_radius);
+    }
+}
 /*customProp*/
 .container{
     margin-inline: auto;
@@ -106,7 +152,23 @@ h1,h2,h3{
 .flow-big > * + *{
     margin-top: 2.5rem;
 }
-
+.fontSize-mid{
+    font-size: var(--fs-base);
+}
+.fontFamily{
+    font-family: var(--ff-P);
+}
+.bg-rose{
+    background-color: var(--clr-N-roseWhite);
+}
+.destaque{ font-weight: 600; color: var(--clr-N-darkCharcoal);}
 .listmargin{ margin-left: 1.25rem;}
 .disc{list-style: disc;}
 .number{list-style: decimal;}
+.padding{ padding:  2rem;}
+.darkR{
+    color: var(--clr-P-darkRaspberry);
+}
+::marker{
+    color: var(--clr-P-nutmeg);
+}
