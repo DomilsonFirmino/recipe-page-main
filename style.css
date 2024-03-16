@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+
+:root{
+
+    --clr-P-nutmeg: hsl(14, 45%, 36%);
+    --clr-P-darkRaspberry: hsl(332, 51%, 32%);
+    
+    --clr-N-white: hsl(0, 0%, 100%);
+    --clr-N-roseWhite: hsl(330, 100%, 98%);
+    --clr-N-eggshell: hsl(30, 54%, 90%);
+    --clr-N-lightGrey: hsl(30, 18%, 87%);
+    --clr-N-wengeBrown: hsl(30, 10%, 34%);
+    --clr-N-darkCharcoal: hsl(24, 5%, 18%);
+
+    --fs-400: 16px;
+
+    --ff-S: "Young Serif", serif;
+    --ff-P: "Outfit", sans-serif;
+
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+/*CSS RESET*/
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+/*CSS RESET*/
+
+body{
+    font-family: var(--ff-P);
+    font-weight: var(--fw-400);
+    font-size: var(--fs-400);
+    line-height: 1rem;
+}
+h1,h2,h3{
+    font-family: var(--ff-S);
+}
