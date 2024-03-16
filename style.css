@@ -15,8 +15,15 @@
     --clr-N-wengeBrown: hsl(30, 10%, 34%);
     --clr-N-darkCharcoal: hsl(24, 5%, 18%);
 
-    --fs-400: 16px;
-
+    /*font-size: ;s*/
+    --fs-sm: clamp(0.8rem, 0.2vw + 0.7rem, 0.9rem);
+    --fs-base: clamp(0.9rem, 0.3vw + 0.9rem, 1.2rem);
+    --fs-md: clamp(1.2rem, 0.6vw + 1rem, 1.6rem);
+    --fs-lg: clamp(1.5rem, 0.9vw + 1.3rem, 2.1rem);
+    --fs-xl: clamp(1.8rem, 1.4vw + 1.5rem, 2.8rem);
+    --fs-xxl: clamp(2.3rem, 2.1vw + 1.8rem, 3.7rem);
+    --fs-xxxl: clamp(2.9rem, 3.1vw + 2.1rem, 4.9rem);
+    /*fs*/
     --ff-S: "Young Serif", serif;
     --ff-P: "Outfit", sans-serif;
 
@@ -43,7 +50,7 @@
         margin: 0;
         padding: 0;
         border: 0;
-        font-size: 100%;
+        fs: 100%;
         font: inherit;
         vertical-align: baseline;
     }
@@ -76,9 +83,14 @@
 body{
     font-family: var(--ff-P);
     font-weight: var(--fw-400);
-    font-size: var(--fs-400);
+    fs: var(--fs-400);
     line-height: 1rem;
 }
 h1,h2,h3{
     font-family: var(--ff-S);
+}
+
+.container{
+    margin-block: auto;
+    width: min(100% - 2rem, 50em);
 }
